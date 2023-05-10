@@ -74,7 +74,7 @@ export default defineConfig(({}) => {
       }
     },
     build: {
-      outDir: 'build',
+      outDir: 'dist',
       minify: false,
       rollupOptions: {
         external: [
