@@ -28,6 +28,7 @@
     "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
     "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
     "@fontsource/plus-jakarta-sans": "^4.5.11",
+    "@keepkey/hdwallet-keepkey-rest": "^1.40.27",
     "@pioneer-sdk/sdk": "1.1.73",
     "buffer": "^6.0.3",
     "framer-motion": "^8.5.5",

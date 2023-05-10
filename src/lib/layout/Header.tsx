@@ -148,27 +148,28 @@ const Header = () => {
       // eslint-disable-next-line no-console
       console.log("wallets: ", wallets);
 
-      for (let i = 0; i < walletDescriptions.length; i++) {
-        const wallet = walletDescriptions[i];
-        if (wallet.type === "keepkey") {
-          wallet.icon = KeepKeyIcon;
-        }
-        if (wallet.type === "metamask") {
-          setMetamaskPaired(true);
-        }
-        if (wallet.type === "keepkey") {
-          setKeepkeyPaired(true);
-        }
-        if (wallet.type === "native") {
-          setNativePaired(true);
-        }
-        // TODO is it connected currently?
-        wallet.paired = true;
-        walletDescriptions[i] = wallet;
-      }
-      // eslint-disable-next-line no-console
-      console.log("walletDescriptions: ", walletDescriptions);
+      // for (let i = 0; i < walletDescriptions.length; i++) {
+      //   const wallet = walletDescriptions[i];
+      //   if (wallet.type === "keepkey") {
+      //     wallet.icon = KeepKeyIcon;
+      //   }
+      //   if (wallet.type === "metamask") {
+      //     setMetamaskPaired(true);
+      //   }
+      //   if (wallet.type === "keepkey") {
+      //     setKeepkeyPaired(true);
+      //   }
+      //   if (wallet.type === "native") {
+      //     setNativePaired(true);
+      //   }
+      //   // TODO is it connected currently?
+      //   wallet.paired = true;
+      //   walletDescriptions[i] = wallet;
+      // }
+      // // eslint-disable-next-line no-console
+      // console.log("walletDescriptions: ", walletDescriptions);
       // setWalletsAvailable(walletsAvailable);
+      setKeepkeyPaired(true);
       setWalletDescriptions(walletDescriptions);
       setBalances(balances);
       // eslint-disable-next-line no-console
@@ -266,17 +267,14 @@ const Header = () => {
           </Avatar>
         </MenuButton>
         <MenuList>
-          <MenuDivider />
           <Accordion defaultIndex={[0]} allowMultiple>
             <AccordionItem>
-              <h2>
                 <AccordionButton>
                   <Box as="span" flex="1" textAlign="left">
                     Balances {balances.length}
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
-              </h2>
               <AccordionPanel pb={4}>
                 {balances.map((balance: any) => (
                   <div>

@@ -12,6 +12,7 @@ const Swap = () => {
 
   const onStart = async function () {
     try {
+      
     } catch (e) {
       // eslint-disable-next-line no-console
       console.error(e);

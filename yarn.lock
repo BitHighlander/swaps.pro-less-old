@@ -2390,10 +2390,24 @@
   resolved "https://registry.yarnpkg.com/@jsdevtools/ono/-/ono-7.1.3.tgz#9df03bbd7c696a5c58885c34aa06da41c8543796"
   integrity sha512-4JQNk+3mVzK3xh2rqd6RB4J46qUR19azEHBneZyTZM+c456qOrbbM/5xcR8huNCCcbVt7+UmizG6GuUvPvKUYg==
 
+"@keepkey/hdwallet-keepkey-rest@^1.40.27":
+  version "1.40.27"
+  resolved "https://registry.yarnpkg.com/@keepkey/hdwallet-keepkey-rest/-/hdwallet-keepkey-rest-1.40.27.tgz#bde7e80b3d7a0a4e5613f62e50fd59c1d588d60d"
+  integrity sha512-rbr6JI/5yUqve9aWJkiA3e5YLgAU/ML0C50vgCHiz1CGxuyzJXkbyEU7WoMHNeSxgij4WBnLIlN1Hp4abIJwBQ==
+  dependencies:
+    "@keepkey/keepkey-sdk" "^0.2.42"
+    lodash "^4.17.21"
+    semver "^6.3.0"
+
 "@keepkey/keepkey-sdk@^0.2.25":
   version "0.2.26"
   resolved "https://registry.yarnpkg.com/@keepkey/keepkey-sdk/-/keepkey-sdk-0.2.26.tgz#554cc4ea4e6f3a4dfb511ae992a5d93b4f14db7b"
   integrity sha512-SJDaYA/BbIYlvM+6uCEDaFkqNIcNbMnxzsytsqSTLM/US+6QLP09hREyS913Ox1LLl+05j7H9RY7FnDfWI05wg==
+
+"@keepkey/keepkey-sdk@^0.2.42":
+  version "0.2.42"
+  resolved "https://registry.yarnpkg.com/@keepkey/keepkey-sdk/-/keepkey-sdk-0.2.42.tgz#1d0c7412cdc332b7739daf371e092b05d302d0ae"
+  integrity sha512-v0pAux3d2LQCmm0znr1Ytpg/sgtZvGqyeLsvSXhLleQ1rOzg7AXE2Yda/aO12gDVOxt6Blaf4KtqfPYpumT/Kw==
 
 "@metamask/detect-provider@^1.2.0":
   version "1.2.0"
